@@ -29,8 +29,6 @@ logger = logging.getLogger(__name__)
 class HTTPSConnectionChain(httplib.HTTPSConnection):
     _preferred_ssl_protos = (
         ('TLSv1' , ssl.PROTOCOL_TLSv1) ,
-        ('SSLv3' , ssl.PROTOCOL_SSLv3) ,
-        ('SSLv23' , ssl.PROTOCOL_SSLv23) ,
     )
     _ssl_working_proto = None
 
